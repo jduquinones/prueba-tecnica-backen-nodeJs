@@ -1,0 +1,29 @@
+CREATE DATABASE `tareas` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+CREATE TABLE `tareas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(45) DEFAULT NULL,
+  `fecha_creacion` datetime DEFAULT CURRENT_TIMESTAMP,
+  `descripcion` varchar(500) DEFAULT NULL,
+  `fecha_actualizacion` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `completado` tinyint(1) DEFAULT '0',
+  `fecha_limite` datetime DEFAULT NULL,
+  `prioridad` varchar(20) DEFAULT NULL,
+  `asignado_a` varchar(100) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `tareas_FK` (`id_usuario`),
+  CONSTRAINT `tareas_FK` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `clave` varchar(100) NOT NULL,
+  `usuario` varchar(100) DEFAULT NULL,
+  `correo` varchar(250) NOT NULL,
+  `habilitado` tinyint(1) NOT NULL DEFAULT '1',
+  `fecha_creacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `fecha_actualizacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `correo` (`correo`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
