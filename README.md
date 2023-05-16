@@ -45,7 +45,7 @@ Asegúrate de tener instalado lo siguiente en tu entorno de desarrollo:
 
 **Operaciones CRUD de la Lista de Tareas**
 
-- POST /crear-tarea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Crea un nuevo elemento en la lista de tareas*
+- POST /crear-tarea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Crea o actualiza un nuevo elemento en la lista de tareas*
 - GET /listar-tarea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Recupera todos los elementos de la lista de tareas.*
 - GET /listar-tarea-id/:id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Recupera un elemento específico de la lista de tareas por el parametro ID en la url.*
 - DELETE /eliminar-tarea &nbsp;&nbsp;&nbsp;&nbsp; *Elimina una tarea específica de la lista de tareas por ID. El ID de la tarea debe proporcionarse en el cuerpo de la petición en formato JSON*
