@@ -46,5 +46,5 @@ Asegúrate de tener instalado lo siguiente en tu entorno de desarrollo:
 - POST /crear-tarea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Crea un nuevo elemento en la lista de tareas*
 - GET /listar-tarea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Recupera todos los elementos de la lista de tareas.*
 - GET /listar-tarea-id/:id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Recupera un elemento específico de la lista de tareas por ID.*
-- PUT /actualizar-tarea/:id: &nbsp;&nbsp;&nbsp;&nbsp; *Actualiza un elemento específico de la lista de tareas por ID.*
+- PUT /actualizar-tarea/:id &nbsp;&nbsp;&nbsp;&nbsp; *Actualiza un elemento específico de la lista de tareas por ID.*
 
