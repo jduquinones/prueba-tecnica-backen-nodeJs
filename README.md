@@ -1,6 +1,8 @@
 # API RESTful de Lista de Tareas con Autenticación JWT
 Esta es una API RESTful simple creada utilizando Node.js, Express y MySQL que permite realizar operaciones CRUD en una lista de tareas. También incluye funcionalidad de autenticación utilizando JSON Web Tokens (JWT) para los endpoints de registro, inicio de sesión y cierre de sesión.
 
+se utiliza el formato json para recibir y enviar informacion
+
 ## Nota:
 
  *En el proyecto se encuentra el script que genera las tablas de la base de datos*
@@ -45,6 +47,6 @@ Asegúrate de tener instalado lo siguiente en tu entorno de desarrollo:
 
 - POST /crear-tarea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Crea un nuevo elemento en la lista de tareas*
 - GET /listar-tarea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Recupera todos los elementos de la lista de tareas.*
-- GET /listar-tarea-id/:id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Recupera un elemento específico de la lista de tareas por ID.*
-- PUT /actualizar-tarea/:id &nbsp;&nbsp;&nbsp;&nbsp; *Actualiza un elemento específico de la lista de tareas por ID.*
+- GET /listar-tarea-id/:id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Recupera un elemento específico de la lista de tareas por el parametro ID en la url.*
+- DELETE /eliminar-tarea &nbsp;&nbsp;&nbsp;&nbsp; *Elimina una tarea específica de la lista de tareas por ID. El ID de la tarea debe proporcionarse en el cuerpo de la petición en formato JSON*
 
